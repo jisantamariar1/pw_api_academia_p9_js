@@ -83,6 +83,7 @@ public class CursoResource {
 
     // Construye los enlaces HATEOAS para el recurso Curso
     private CursoRepresentation construirLinks(CursoRepresentation cr) {
+        if (cr.id == null) return cr;
         // Enlace al propio curso
         String self = this.uriInfo.getBaseUriBuilder()
                 .path(CursoResource.class)

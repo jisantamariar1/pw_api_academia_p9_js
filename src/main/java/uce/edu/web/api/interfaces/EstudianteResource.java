@@ -84,6 +84,7 @@ public class EstudianteResource {
     
     // Construye los enlaces HATEOAS para el recurso Estudiante
     private EstudianteRepresentation construirLinks(EstudianteRepresentation er) {
+        if (er.id == null) return er;
         // Enlace al propio recurso (self)
         String self = this.uriInfo.getBaseUriBuilder()
                 .path(EstudianteResource.class)

@@ -69,6 +69,15 @@
             <artifactId>rest-assured</artifactId>
             <scope>test</scope>
         </dependency>
+          <dependency>
+            <groupId>io.quarkus</groupId>
+            <artifactId>quarkus-smallrye-jwt</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>io.quarkus</groupId>
+            <artifactId>quarkus-security</artifactId>
+        </dependency>
         
     </dependencies>
 
