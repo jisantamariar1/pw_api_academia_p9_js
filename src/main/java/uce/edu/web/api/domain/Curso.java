@@ -26,7 +26,7 @@ public class Curso extends PanacheEntityBase {
     public String nombre;
     public String codigo;
     public String descripcion;
-    public int cupos;
+    public Integer cupos;
 
     public String estado;
 
