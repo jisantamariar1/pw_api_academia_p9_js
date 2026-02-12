@@ -60,7 +60,7 @@ public class InscripcionResource {
         return lista;
     }
 
-    // Comentario arriba de la línea
+    
     // Genera links inteligentes: Solo permite cancelar si la inscripción no está ya cancelada
     private InscripcionRepresentation construirLinks(InscripcionRepresentation ir) {
         List<LinkDto> links = new ArrayList<>();
